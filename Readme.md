@@ -11,9 +11,10 @@ if (isNode) {
 
 The check is performed as:
 ```js
-module.exports = (typeof process === 'object') && 
-  Object.prototype.toString.call(process) === '[object process]' ? 
+module.exports = 
+  Object.prototype.toString.call( (global || window).process ) === '[object process]' ? 
   true : false;
+
 ```
 
-Thanks to **Ingvar Stepanyan** for the idea, it's the most reliable way to detect Node.JS I could find.
+Thanks to Ingvar Stepanyan for the initial idea. This check is both **the most reliable I could find** and it does not use `process` env directly, which causes browserify to include it into the build.

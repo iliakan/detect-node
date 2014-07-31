@@ -1,1 +1,1 @@
-module.exports = (typeof process === 'object') && Object.prototype.toString.call(process) === '[object process]' ? true : false;
+module.exports = Object.prototype.toString.call( (global || window).process ) === '[object process]' ? true : false;
