@@ -1,6 +1,6 @@
 {
   "name": "detect-node",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Detect Node.JS (as opposite to browser environment) (reliable)",
   "main": "index.js",
   "scripts": {
