@@ -11,8 +11,9 @@ if (isNode) {
 
 The check is performed as:
 ```js
-module.exports = (typeof process === 'object') && Object.prototype.toString.call(process) === '[object process]' ? 
+module.exports = (typeof process === 'object') && 
+  Object.prototype.toString.call(process) === '[object process]' ? 
   true : false;
 ```
 
-Thanks to Ingvar Stepanyan for the idea, it's the most reliable way to detect Node.JS I could find.
+Thanks to **Ingvar Stepanyan** for the idea, it's the most reliable way to detect Node.JS I could find.
