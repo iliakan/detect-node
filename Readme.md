@@ -4,7 +4,7 @@
 npm install --save detect-node
 ```
 
-###Usage:
+### Usage:
 
 ```js
 var isNode = require('detect-node');
