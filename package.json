@@ -1,6 +1,6 @@
 {
   "name": "detect-node",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Detect Node.JS (as opposite to browser environment) (reliable)",
   "main": "index.js",
   "browser": "browser.js",
@@ -16,7 +16,7 @@
     "node"
   ],
   "author": "Ilya Kantor",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/iliakan/detect-node/issues"
   },
