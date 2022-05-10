@@ -1,2 +1,2 @@
-module.exports = false;
+module.exports.isNode = false;
 
