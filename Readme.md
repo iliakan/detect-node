@@ -7,7 +7,7 @@ npm install --save detect-node
 ### Usage:
 
 ```js
-var isNode = require('detect-node');
+const { isNode } = require('detect-node');
 
 if (isNode) {
   console.log("Running under Node.JS");
@@ -18,11 +18,11 @@ if (isNode) {
 
 The check is performed as:
 ```js
-module.exports = false;
+module.exports.isNode = false;
 
 // Only Node.JS has a process variable that is of [[Class]] process
 try {
- module.exports = Object.prototype.toString.call(global.process) === '[object process]' 
+ module.exports.isNode = Object.prototype.toString.call(global.process) === '[object process]' 
 } catch(e) {}
 
 ```
